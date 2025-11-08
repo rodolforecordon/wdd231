@@ -32,18 +32,19 @@
   }
 
   nav li a {
-    color: #fff;
+    color: var(--white);
     transition: background-color 0.3s;
   }
 
   nav li a:hover {
-    background-color: #000000;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
   }
 
   nav a[href='index.html'] {
-    background-color: #000;
-    color: #fff;
+    background-color: transparent;
+    text-decoration: underline;
+    color: var(--white);
   }
 
   /*************** MAIN CONTENT ***************/
