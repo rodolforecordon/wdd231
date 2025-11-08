@@ -1,0 +1,186 @@
+/*************** SITE WIDE ***************/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #ecf0f1;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*************** PAGE HEADER ***************/
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+}
+
+#header-span {
+  margin-left: 1rem;
+}
+
+/*************** NAVIGATION ***************/
+nav {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: #34495e;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+nav li a:hover {
+  background-color: #2c3e50;
+  text-decoration: none;
+}
+
+nav.show {
+  display: block;
+}
+
+nav a[href='index.html'] {
+  background-color: #000;
+  color: #fff;
+}
+
+/*************** HAMBURGER NAVIGATION ***************/
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.hamburger::before {
+  content: '\2630'; /* Hamburger icon */
+}
+
+.hamburger.show::before {
+  content: '\00D7'; /* 'X' icon */
+}
+
+/*************** MAIN CONTENT ***************/
+main {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main h1 {
+  margin-top: 0;
+}
+
+section {
+  background-color: #fff;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+section h2 {
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+/*************** FOOTER ***************/
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+/*************** COURSE FILTERS ***************/
+.course-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.course-filters button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.course-filters button:hover {
+  background-color: #000;
+}
+
+/*************** COURSE CARDS ***************/
+.course-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.course-card {
+  background-color: #fff;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.course-card h3 {
+  margin: 0;
+}
+
+.course-card h4 {
+  font-weight: normal;
+  color: #7f8c8d;
+}
+
+.course-card.completed {
+  background-color: #c5f3d8;
+}
+
+/************* PROFILE PICTURE **************/
+.student-photo img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}

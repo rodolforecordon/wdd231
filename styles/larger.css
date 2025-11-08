@@ -1,0 +1,84 @@
+@media only screen and (min-width: 38rem) {
+  /*************** PAGE LAYOUT ***************/
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  header,
+  footer {
+    margin: 0;
+  }
+
+  header {
+    margin-bottom: 1rem;
+  }
+
+  /*************** NAVIGATION ***************/
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    position: static;
+    background-color: transparent;
+    width: auto;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav li a {
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+
+  nav li a:hover {
+    background-color: #000000;
+    color: #fff;
+  }
+
+  nav a[href='index.html'] {
+    background-color: #000;
+    color: #fff;
+  }
+
+  /*************** MAIN CONTENT ***************/
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  main h1 {
+    grid-column: 1 / -1;
+    margin-block: 0.1rem;
+  }
+
+  .course-section {
+    grid-column: 1 / -1;
+  }
+
+  /*************** FOOTER ***************/
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  /*************** COURSE CARDS ***************/
+  .course-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  /*************** MAIN CONTENT ***************/
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}

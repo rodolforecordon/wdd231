@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD231 | Rodolfo Recordon</title>
+  <meta name="author" content="Rodolfo Recordon">
+  <meta name="description" content="This is profile page built for BYU-I WDD231 class.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Style Sheets Here  -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- Scripts -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="page-header">
+      <img src="images/logo.svg" alt="site logo" width="48" height="48">
+      <span id="header-span">WDD231 Rodolfo Recordon</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chamber-project.html">Chamber Project</a></li>
+        <li><a href="final-project.html">Final Project</a></li>
+      </ul>
+    </nav>
+    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+  </header>
+  <main>
+    <h1>Home</h1>
+    <section>
+      <h2>About Me</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor facere dolores dolore nostrum hic quod repellat
+        minima? Praesentium sequi nam corrupti mollitia, accusantium quidem reiciendis. Voluptatibus odit labore
+        corporis aliquam.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor facere dolores dolore nostrum hic quod repellat
+        minima? Praesentium sequi nam corrupti mollitia, accusantium quidem reiciendis. Voluptatibus odit labore
+        corporis aliquam.</p>
+    </section>
+    <section class="student-photo">
+      <h2>Student Photo</h2>
+      <img src="images/profile.webp" alt="student profile">
+    </section>
+    <section class="course-section">
+      <h2>Web Certificate Courses</h2>
+      <div class="course-filters">
+        <button id="filter-all">All</button>
+        <button id="filter-wdd">WDD</button>
+        <button id="filter-cse">CSE</button>
+      </div>
+      <p>Total Credits: <span id="total-credits"></span></p>
+      <div id="course-cards" class="course-grid"></div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+    </div>
+    <div>
+      &copy; <span id="currentyear"></span> Rodolfo Recordon, Brazil
+    </div>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>
