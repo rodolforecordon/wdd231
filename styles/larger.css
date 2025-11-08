@@ -42,8 +42,7 @@
   }
 
   nav a[href='index.html'] {
-    background-color: transparent;
-    text-decoration: underline;
+    background-color: var(--black);
     color: var(--white);
   }
 
