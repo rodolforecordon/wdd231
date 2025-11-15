@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Innovate Inc.",
+    "tagline": "Pioneering Tomorrow's Solutions, Today.",
+    "email": "contact@innovateinc.com",
+    "phone": "555-010-101",
+    "url": "https://www.innovateinc.com",
+    "image": "images/innovate.webp"
+  },
+  {
+    "name": "Quantum Leap",
+    "tagline": "Advancing Industries with Quantum Computing.",
+    "email": "hello@quantumleap.tech",
+    "phone": "555-010-202",
+    "url": "https://www.quantumleap.tech",
+    "image": "images/quantum.webp"
+  },
+  {
+    "name": "GreenScape",
+    "tagline": "Sustainable Solutions for a Greener World.",
+    "email": "support@greenscape.eco",
+    "phone": "555-010-303",
+    "url": "https://www.greenscape.eco",
+    "image": "images/greenscape.webp"
+  },
+  {
+    "name": "Cyber-Safe",
+    "tagline": "Your Digital Fortress in a Complex World.",
+    "email": "info@cybersafe.com",
+    "phone": "555-010-404",
+    "url": "https://www.cybersafe.com",
+    "image": "images/cybersafe.webp"
+  },
+  {
+    "name": "Bio-Genetics",
+    "tagline": "Engineering Life for a Better Future.",
+    "email": "media@biogenetics.life",
+    "phone": "555-010-505",
+    "url": "https://www.biogenetics.life",
+    "image": "images/biogenetics.webp"
+  },
+  {
+    "name": "Stellar-Transport",
+    "tagline": "Connecting Worlds, One Voyage at a Time.",
+    "email": "journeys@stellartransport.space",
+    "phone": "555-010-606",
+    "url": "https://www.stellartransport.space",
+    "image": "images/stellar.webp"
+  },
+  {
+    "name": "Fusion-Foods",
+    "tagline": "Taste the Future of Culinary Innovation.",
+    "email": "flavors@fusionfoods.com",
+    "phone": "555-010-707",
+    "url": "https://www.fusionfoods.com",
+    "image": "images/fusionfoods.webp"
+  }
+]

@@ -29,12 +29,79 @@
 
   <!-- Scripts -->
   <script src="scripts/navigation.js" defer></script>
-  <script src="scripts/main.js" defer></script>
-  <script src="scripts/courses.js" defer></script>
+  <script src="scripts/utils.js" defer></script>
 </head>
 
 <body>
+  <header>
+    <div class="page-header">
+      <img src="images/logo.svg" alt="site logo" width="48" height="48">
+      <span id="header-span">Valongo Chamber of Commerce</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="final-project.html">Join</a></li>
+        <li><a href="final-project.html">Discover</a></li>
+      </ul>
+    </nav>
+    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+  </header>
 
+  <main>
+    <div id="hero">
+      <img src="images/valongo-hero.webp" alt="valongo city library">
+      <button>Keynote Tickets</button>
+    </div>
+    <h1>Home</h1>
+    <section class="events">
+      <h2>Events</h2>
+    </section>
+    <section class="weather-current">
+      <h2>Current Weather</h2>
+      <div>
+        <span></span>
+        <div>
+          <p><strong>16º</strong>C</p>
+          <p>Party Cloudy</p>
+          <p>High: 18º</p>
+          <p>Low: 14º</p>
+          <p>Humidity: 57%</p>
+          <p>Sunrise: 7:43am</p>
+          <p>Sunset: 5:16pm</p>
+        </div>
+      </div>
+    </section>
+    <section class="weather-forecast">
+      <h2>Weather Forecast</h2>
+      <p>Today: <strong>17ºC</strong></p>
+      <p>Wednesday: <strong>15ºC</strong></p>
+      <p>Thursday: <strong>14ºC</strong></p>
+    </section>
+    <section class="business-cards"></section>
+  </main>
+
+  <footer>
+
+    <div id="social-media">
+      <a href="https://youtube.com/" target="_blank">
+        <img src="images/youtube.svg" alt="youtube logo">
+      </a>
+      <a href="https://twitter.com/" target="_blank">
+        <img src="images/twitter.svg" alt="twitter logo">
+      </a>
+      <a href="https://facebook.com/" target="_blank">
+        <img src="images/facebook.svg" alt="facebook logo">
+      </a>
+    </div>
+    <div>
+      &copy; <span id="currentyear"></span> Rodolfo Recordon, Brazil
+    </div>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/members.js" defer></script>
 </body>
 
 </html>
