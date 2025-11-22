@@ -1,5 +1,5 @@
 const displayMembers = async () => {
-  const cards = document.querySelector('.business-cards');
+  const cards = document.querySelector('.members');
   cards.innerHTML = '';
 
   try {
@@ -8,7 +8,8 @@ const displayMembers = async () => {
     console.log(data);
 
     data.forEach((member) => {
-      const card = document.createElement('section');
+      const card = document.createElement('div');
+      card.setAttribute('class', 'business-card');
       card.innerHTML = `
       <img src="${member.image}" alt="${member.name} logo" loading="lazy">
       <div>
@@ -25,4 +26,4 @@ const displayMembers = async () => {
   }
 };
 
-displayMembers();
+document.addEventListener('readystatechange', () => displayMembers());

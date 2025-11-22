@@ -171,36 +171,14 @@ footer {
   height: 50px;
 }
 
-/*************** COURSE FILTERS ***************/
-.course-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.course-filters button {
-  background-color: var(--black);
-  color: var(--white);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.course-filters button:hover {
-  background-color: var(--black);
-}
-
 /*************** COURSE CARDS ***************/
-.course-grid {
+.members {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
 }
 
-.course-card {
+.business-card {
   background-color: var(--white);
   border: 1px solid var(--silver);
   border-radius: 5px;
@@ -208,74 +186,11 @@ footer {
   text-align: center;
 }
 
-.course-card h3 {
+.business-card h3 {
   margin: 0;
 }
 
-.course-card h4 {
+.business-card h4 {
   font-weight: normal;
   color: var(--gray);
-}
-
-.course-card.completed {
-  background-color: var(--light-green);
-}
-
-/*************** DIRECTORY VIEW ***************/
-.view-buttons {
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
-}
-
-.view-buttons button {
-  background-color: var(--black);
-  color: var(--white);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.view-buttons button.active {
-  background-color: var(--light-blue);
-}
-
-.business-cards.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-.business-cards.list {
-  display: block;
-}
-
-.business-cards.list section {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.business-cards.list img {
-  width: 100%;
-}
-
-/*************** SPOTLIGHT ***************/
-.spotlight {
-  background-color: var(--white);
-  border: 1px solid var(--silver);
-  border-radius: 5px;
-  padding: 1rem;
-  margin: 0 0.5rem 1rem 0.5rem;
-}
-
-.spotlight h2 {
-  font-size: 1.3rem;
-  border-bottom: 2px solid var(--light-blue);
-  padding-bottom: 0.5rem;
-  margin: 1rem 0 1rem 0;
 }
