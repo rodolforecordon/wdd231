@@ -47,13 +47,13 @@
   }
 
   /*************** MAIN CONTENT ***************/
-  main {
+  .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
 
-  main h1 {
+  .home-grid h1 {
     grid-column: 1 / -1;
     margin-block: 0.1rem;
   }
@@ -67,6 +67,8 @@
     width: 50px;
     height: 50px;
   }
+
+  
 
   #hero {
     margin-top: -1rem;
@@ -89,11 +91,16 @@
   .course-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
+  /*************** DIRECTORY VIEW ***************/
+  .members {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (min-width: 64rem) {
   /*************** MAIN CONTENT ***************/
-  main {
+  .home-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -102,3 +109,4 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
+

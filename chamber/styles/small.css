@@ -107,10 +107,9 @@ nav a[href='directory.html'] {
 /*************** MAIN CONTENT ***************/
 main {
   display: grid;
-  grid-template-columns: 1fr;
 }
 
-main h1 {
+h1 {
   font-size: 1.5rem;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
   grid-column: 1 / -1;
@@ -176,6 +175,7 @@ footer {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
+  grid-column: 1 / -1;
 }
 
 .business-card {
@@ -187,10 +187,62 @@ footer {
 }
 
 .business-card h3 {
-  margin: 0;
+  margin: 0.5rem;
+}
+
+.business-card p {
+  margin: 0.5rem;
 }
 
 .business-card h4 {
   font-weight: normal;
   color: var(--gray);
+}
+
+/*************** DIRECTORY VIEW ***************/
+.view-toggle {
+  text-align: center;
+  margin-bottom: 1rem;
+  grid-column: 1 / -1;
+}
+
+.view-toggle button {
+  background-color: var(--light-gray);
+  border: 1px solid var(--silver);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.view-toggle button.active {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.members.list-view {
+  display: block;
+}
+
+.members.list-view .business-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: center;
+  text-align: left;
+}
+
+.members.list-view .business-card img {
+  width: 100%;
+}
+
+/*************** WEATHER ***************/
+.weather-current > div {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+#weather-desc {
+  text-transform: capitalize;
 }

@@ -12,7 +12,7 @@
   <meta property="og:title" content="City Chamber | WDD231 - Rodolfo Recordon">
   <meta property="og:description" content="BYU-I WDD231 class - Project City Chamber web page">
   <meta property="og:image" content="https://recordon.github.io/wdd231/images/logo.svg">
-  <meta property="og:url" content="https://recordon.github.io/wdd231/chamber/directory.html">
+  <meta property="og:url" content="https://recordon.github.io/wdd231/chamber/index.html">
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
@@ -28,10 +28,9 @@
   <link rel="stylesheet" href="styles/larger.css">
 
   <!-- Scripts -->
+  <script src="scripts/weather.js" defer></script>
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/utils.js" defer></script>
-  <script src="scripts/members.js" defer></script>
-  <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
@@ -50,16 +49,42 @@
     </nav>
     <button id="nav-button" class="hamburger" aria-label="navigation"></button>
   </header>
-
+  <!-- Call to Action -->
   <main>
-        <h1>Directory</h1>
-      <div class="view-toggle">
-        <button id="grid-view" class="active">Grid</button>
-        <button id="list-view">List</button>
+    <div class="home-grid">
+      <div id="hero">
+        <img src="images/valongo-hero.webp" alt="valongo city library">
+        <button>Keynote Tickets</button>
       </div>
-      <section class="members"></section>
-      </main>  <footer>
+      <h1>Home</h1>
+      <section class="events">
+        <h2>Events</h2>
+      </section>
+      <section class="weather-current">
+        <h2>Current Weather</h2>
+        <div>
+          <span id="weather-icon"></span>
+          <div>
+            <p id="temp"></p>
+            <p id="weather-desc"></p>
+            <p id="temp-max"></p>
+            <p id="temp-min"></p>
+            <p id="humidity"></p>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+          </div>
+        </div>
+      </section>
+      <section class="weather-forecast">
+        <h2>Weather Forecast</h2>
+        <p id="forecast-1"></p>
+        <p id="forecast-2"></p>
+        <p id="forecast-3"></p>
+      </section>
+    </div>
+  </main>
 
+  <footer>
     <div id="social-media">
       <a href="https://youtube.com/" target="_blank">
         <img src="images/youtube.svg" alt="youtube logo">

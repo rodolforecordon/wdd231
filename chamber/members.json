@@ -5,7 +5,8 @@
     "email": "contact@innovateinc.com",
     "phone": "555-010-101",
     "url": "https://www.innovateinc.com",
-    "image": "images/innovate.webp"
+    "image": "images/innovate.webp",
+    "status": "gold"
   },
   {
     "name": "Quantum Leap",
@@ -13,7 +14,8 @@
     "email": "hello@quantumleap.tech",
     "phone": "555-010-202",
     "url": "https://www.quantumleap.tech",
-    "image": "images/quantum.webp"
+    "image": "images/quantum.webp",
+    "status": "gold"
   },
   {
     "name": "GreenScape",
@@ -21,7 +23,8 @@
     "email": "support@greenscape.eco",
     "phone": "555-010-303",
     "url": "https://www.greenscape.eco",
-    "image": "images/greenscape.webp"
+    "image": "images/greenscape.webp",
+    "status": "bronze"
   },
   {
     "name": "Cyber-Safe",
@@ -29,7 +32,8 @@
     "email": "info@cybersafe.com",
     "phone": "555-010-404",
     "url": "https://www.cybersafe.com",
-    "image": "images/cybersafe.webp"
+    "image": "images/cybersafe.webp",
+    "status": "bronze"
   },
   {
     "name": "Bio-Genetics",
@@ -37,7 +41,8 @@
     "email": "media@biogenetics.life",
     "phone": "555-010-505",
     "url": "https://www.biogenetics.life",
-    "image": "images/biogenetics.webp"
+    "image": "images/biogenetics.webp",
+    "status": "silver"
   },
   {
     "name": "Stellar-Transport",
@@ -45,7 +50,8 @@
     "email": "journeys@stellartransport.space",
     "phone": "555-010-606",
     "url": "https://www.stellartransport.space",
-    "image": "images/stellar.webp"
+    "image": "images/stellar.webp",
+    "status": "bronze"
   },
   {
     "name": "Fusion-Foods",
@@ -53,6 +59,7 @@
     "email": "flavors@fusionfoods.com",
     "phone": "555-010-707",
     "url": "https://www.fusionfoods.com",
-    "image": "images/fusionfoods.webp"
+    "image": "images/fusionfoods.webp",
+    "status": "silver"
   }
 ]
