@@ -82,7 +82,7 @@ nav.show {
   display: block;
 }
 
-nav a[href='directory.html'] {
+nav a[href='index.html'] {
   background-color: var(--black);
   color: var(--white);
 }
