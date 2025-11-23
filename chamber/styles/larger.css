@@ -68,8 +68,6 @@
     height: 50px;
   }
 
-  
-
   #hero {
     margin-top: -1rem;
     grid-column: 1 / -1;
@@ -96,17 +94,11 @@
   .members {
     grid-template-columns: 1fr 1fr;
   }
-}
 
-@media only screen and (min-width: 64rem) {
-  /*************** MAIN CONTENT ***************/
-  .home-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /*************** DIRECTORY VIEW ***************/
-  .business-cards.grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /*************** SPOTLIGHT ***************/
+  #spotlight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
-

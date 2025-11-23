@@ -186,6 +186,10 @@ footer {
   text-align: center;
 }
 
+.business-card img {
+  width: 150px;
+}
+
 .business-card h3 {
   margin: 0.5rem;
 }
@@ -245,4 +249,36 @@ footer {
 
 #weather-desc {
   text-transform: capitalize;
+}
+
+/*************** SPOTLIGHT ***************/
+#spotlight {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.spotlight-card {
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3fr);
+  grid-template-rows: repeat(5fr);
+}
+
+.spotlight-card h3 {
+  text-align: center;
+  grid-column: 1 / 4;
+}
+
+.spotlight-card img {
+  width: 100px;
+  grid-column: 1;
+  grid-row: 2 / 6;
+}
+
+.spotlight-card p {
+  grid-column: 2 / 4;
+  margin: 0;
 }

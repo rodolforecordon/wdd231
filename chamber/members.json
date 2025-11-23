@@ -6,7 +6,8 @@
     "phone": "555-010-101",
     "url": "https://www.innovateinc.com",
     "image": "images/innovate.webp",
-    "status": "gold"
+    "status": "gold",
+    "address": "Rua Cesário Verde 78"
   },
   {
     "name": "Quantum Leap",
@@ -15,7 +16,8 @@
     "phone": "555-010-202",
     "url": "https://www.quantumleap.tech",
     "image": "images/quantum.webp",
-    "status": "gold"
+    "status": "gold",
+    "address": "Rua dos Lagueirões 523"
   },
   {
     "name": "GreenScape",
@@ -24,7 +26,8 @@
     "phone": "555-010-303",
     "url": "https://www.greenscape.eco",
     "image": "images/greenscape.webp",
-    "status": "bronze"
+    "status": "bronze",
+    "address": "Rua do Valado 223"
   },
   {
     "name": "Cyber-Safe",
@@ -33,7 +36,8 @@
     "phone": "555-010-404",
     "url": "https://www.cybersafe.com",
     "image": "images/cybersafe.webp",
-    "status": "bronze"
+    "status": "bronze",
+    "address": "Rua 5 de Outubro 142"
   },
   {
     "name": "Bio-Genetics",
@@ -42,7 +46,8 @@
     "phone": "555-010-505",
     "url": "https://www.biogenetics.life",
     "image": "images/biogenetics.webp",
-    "status": "silver"
+    "status": "silver",
+    "address": "Rua do Conhecimento 64"
   },
   {
     "name": "Stellar-Transport",
@@ -51,7 +56,8 @@
     "phone": "555-010-606",
     "url": "https://www.stellartransport.space",
     "image": "images/stellar.webp",
-    "status": "bronze"
+    "status": "bronze",
+    "address": "Rua Vasco da Gama 35"
   },
   {
     "name": "Fusion-Foods",
@@ -60,6 +66,7 @@
     "phone": "555-010-707",
     "url": "https://www.fusionfoods.com",
     "image": "images/fusionfoods.webp",
-    "status": "silver"
+    "status": "silver",
+    "address": "Rua dos Coqueiros 12"
   }
 ]

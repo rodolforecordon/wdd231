@@ -1,5 +1,5 @@
 const displayMembers = async () => {
-  const cards = document.querySelector('.spotlight');
+  const cards = document.querySelector('#spotlight');
 
   try {
     const response = await fetch('members.json');
@@ -9,23 +9,22 @@ const displayMembers = async () => {
     spotlight.splice(randNumber, 1);
     console.log(spotlight);
 
-    // data.forEach((member) => {
-    //   const card = document.createElement('div');
-    //   card.setAttribute('class', 'business-card');
-    //   card.innerHTML = `
-    //   <img src="${member.image}" alt="${member.name} logo" loading="lazy">
-    //   <div>
-    //     <h3>${member.name}</h3>
-    //     <p>${member.tagline}</p>
-    //     <p><a href="tel:${member.phone}">${member.phone}</a></p>
-    //     <p><a href="${member.url}" target="_blank">${member.url}</a></p>
-    //   </div>
-    // `;
-    //   cards.appendChild(card);
-    // });
+    spotlight.forEach((member) => {
+      const card = document.createElement('div');
+      card.setAttribute('class', 'spotlight-card');
+      card.innerHTML = `
+        <h3>${member.name}</h3>
+        <img src="${member.image}" alt="${member.name} logo" loading="lazy">
+        <p><a href="tel:${member.phone}">${member.phone}</a></p>
+        <p>${member.address}</p>
+        <p><a href="${member.url}" target="_blank">${member.url}</a></p>
+        <p>${member.status} member</p>
+      `;
+      cards.appendChild(card);
+    });
   } catch (error) {
     console.error('Error fetching data:', error);
   }
 };
 
-document.addEventListener('readystatechange', () => displayMembers());
+displayMembers();
