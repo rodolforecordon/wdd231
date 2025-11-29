@@ -318,3 +318,8 @@ button[type='submit'] {
 button[type='submit']:hover {
   background-color: var(--medium-blue);
 }
+
+/*************** THANK YOU PAGE ***************/
+.thank-you-msg {
+  margin-left: 0.5rem;
+}
