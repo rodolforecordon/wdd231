@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Join the Chamber | WDD231 - Rodolfo Recordon</title>
   <meta name="author" content="Rodolfo Recordon">
-  <meta name="description" content="BYU-I WDD231 class - Join the Chamber web page">
+  <meta name="description" content="BYU-I WDD231 class - page used for registering new chamber members">
 
   <!-- Metadata -->
   <meta property="og:title" content="Join the Chamber | WDD231 - Rodolfo Recordon">
-  <meta property="og:description" content="BYU-I WDD231 class - Join the Chamber web page">
-  <meta property="og:image" content="https://recordon.github.io/wdd231/images/logo.svg">
+  <meta property="og:description" content="BYU-I WDD231 class - Page used for joining Valongo City Chamber">
+  <meta property="og:image" content="https://recordon.github.io/wdd231/chamber/images/logo.svg">
   <meta property="og:url" content="https://recordon.github.io/wdd231/chamber/join.html">
 
   <!-- Favicon -->
@@ -30,6 +30,7 @@
   <!-- Scripts -->
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/utils.js" defer></script>
+  <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -52,17 +53,17 @@
     <h1>Join the Chamber</h1>
     <form action="thankyou.html" method="get">
       <label for="first-name">First Name*</label>
-      <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+      <input type="text" id="first-name" name="first-name" autocomplete="given-name" required title="First name (minimum 2 characters, alphanumeric)">
       <label for="last-name">Last Name*</label>
-      <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+      <input type="text" id="last-name" name="last-name" autocomplete="family-name" required title="Last name (minimum 2 characters, alphanumeric)">
       <label for="title">Title*</label>
-      <input type="text" id="title" name="title" autocomplete="organization-title" required pattern="[A-Za-z -]{7,}">
+      <input type="text" id="title" name="title" autocomplete="organization-title" required pattern="[A-Za-z -]{7,}" title="Title (minimum 7 characters, alphabetic, space or dash)">
       <label for="email">Email*</label>
-      <input type="email" id="email" name="email" required placeholder="example@email.com">
+      <input type="email" id="email" name="email" required placeholder="example@email.com" autocomplete="email" title="A valid email address">
       <label for="mobile">Mobile Phone*</label>
-      <input type="tel" id="mobile" name="mobile" required>
+      <input type="tel" id="mobile" name="mobile" required autocomplete="tel" title="A valid mobile phone number">
       <label for="business-name">Business/Organization's Name*</label>
-      <input type="text" id="business-name" name="business-name" required>
+      <input type="text" id="business-name" name="business-name" required autocomplete="organization" title="The name of your business or organization">
       <label for="membership-level">Membership Level*</label>
       <select id="membership-level" name="membership-level">
         <option value="np">Non-Profit</option>
@@ -71,7 +72,7 @@
         <option value="gold">Gold</option>
       </select>
       <label for="business-description">Business/Organization Description</label>
-      <textarea id="business-description" name="business-description"></textarea>
+      <textarea id="business-description" name="business-description" title="A brief description of your business or organization"></textarea>
       <input type="hidden" id="timestamp" name="timestamp">
       <button type="submit">Join</button>
     </form>
@@ -94,9 +95,6 @@
     </div>
     <p id="lastModified"></p>
   </footer>
-  <script>
-    document.getElementById('timestamp').value = new Date().toISOString();
-  </script>
 </body>
 
 </html>
