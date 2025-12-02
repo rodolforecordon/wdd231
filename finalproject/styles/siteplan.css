@@ -1,0 +1,128 @@
+:root {
+  /* Primary Background Colors */
+  --blue-40: #003057;
+  --blue-30: #006184;
+  --green-40: #235c35;
+  --green-30: #2c803d;
+  --orange-40: #7d2f08;
+  --orange-30: #d45311;
+
+  /* Accent Background Colors */
+  --blue-20: #01b6d1;
+  --green-20: #6db344;
+  --orange-20: #f68d2e;
+
+  /* Fonts */
+  --body-font: 'Noto Sans', sans-serif;
+  --headers-font: 'Noto Sans Mono', monospace;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.false-header {
+  font-family: var(--headers-font);
+}
+
+a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+.false-header {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.smaller {
+  font-size: 0.8rem;
+}
+
+.color-schema {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.color {
+  border-radius: 5px;
+  padding: 1rem;
+  font-family: var(--headers-font);
+}
+
+.blue-40 {
+  background-color: var(--blue-40);
+  color: #fff;
+}
+
+.blue-30 {
+  background-color: var(--blue-30);
+  color: #fff;
+}
+
+.blue-20 {
+  background-color: var(--blue-20);
+}
+
+.green-40 {
+  background-color: var(--green-40);
+  color: #fff;
+}
+
+.green-30 {
+  background-color: var(--green-30);
+  color: #fff;
+}
+
+.green-20 {
+  background-color: var(--green-20);
+}
+
+.red-40 {
+  background-color: var(--red-40);
+  color: #fff;
+}
+
+.red-30 {
+  background-color: var(--red-30);
+  color: #fff;
+}
+
+.red-20 {
+  background-color: var(--red-20);
+}
+
+.orange-40 {
+  background-color: var(--orange-40);
+  color: #fff;
+}
+
+.orange-30 {
+  background-color: var(--orange-30);
+  color: #fff;
+}
+
+.orange-20 {
+  background-color: var(--orange-20);
+}
+
+typography-span {
+  font-family: var(--headers-font);
+}
