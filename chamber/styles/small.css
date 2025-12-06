@@ -372,3 +372,7 @@ button[type='submit']:hover {
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
+
+#visit-message {
+  margin-left: 1rem;
+}
