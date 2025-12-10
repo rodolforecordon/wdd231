@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Rodolfo Recordon">
+  <meta name="description" content="Contact page for the Young Men organization at Porto 1 Ward.">
+  <title>Contact - Young Men @Porto1Ward</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.webp" alt="logo">
+    </div>
+    <div id="menu"></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Get in Touch</h1>
+    <p>Have questions or want to learn more? Fill out the form below and we'll get back to you soon!</p>
+    <form action="thankyou.html" method="get">
+      <fieldset>
+        <legend>Your Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </fieldset>
+      <input type="submit" value="Send Message">
+    </form>
+  </main>
+  <footer>&copy; <span id="currentyear"></span> Young Men @Porto1Ward | Rodolfo Recordon | <a href="https://www.loom.com/share/eaa0630771a1408eb995cd1c6a487e13">Loom demonstration video</a></footer>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/form-counter.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #235c35; /* green-40 */
+  --secondary-color: #2c803d; /* green-30 */
+  --accent-color: #6db344; /* green-20 */
+}
+
+header,
+footer {
+  background-color: var(--primary-color);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+thead {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

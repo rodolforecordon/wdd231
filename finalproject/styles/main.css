@@ -1,0 +1,147 @@
+:root {
+  /* Fonts */
+  --body-font: 'Noto Sans', sans-serif;
+  --headers-font: 'Noto Sans Mono', monospace;
+
+  /* Colors */
+  --text-light: #f0f0f0;
+  --text-dark: #333;
+  --background-light: #fff;
+}
+
+body {
+  font-family: var(--body-font);
+  margin: 0;
+  padding: 0;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 2rem;
+  color: var(--text-light);
+  position: relative;
+}
+
+.logo {
+  font-family: var(--headers-font);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 4rem;
+}
+
+/* Hamburger Menu Styles */
+#menu {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  color: var(--text-light);
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+#menu::before {
+  content: '≡';
+}
+
+#menu.open::before {
+  content: 'X';
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 4.5rem; /* Adjust based on header height */
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: var(--headers-font);
+}
+
+h2 {
+  margin: 2px 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  color: var(--text-light);
+}
+
+/* Media Query for larger screens */
+@media screen and (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    border-top: none;
+  }
+
+  nav a {
+    margin-left: 1.5rem;
+    padding: 0;
+  }
+}
